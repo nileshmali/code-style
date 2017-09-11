@@ -1,0 +1,34 @@
+{
+  "name": "@nmjs/eslint-config-node",
+  "version": "1.0.0",
+  "description": "An eslint rules for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nileshmali/code-style.git"
+  },
+  "keywords": [
+    "eslint",
+    "code-style",
+    "rules",
+    "nodejs"
+  ],
+  "author": "Nilesh Mali <nileshmali86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nileshmali/code-style/issues"
+  },
+  "homepage": "https://github.com/nileshmali/code-style#readme",
+  "peerDependencies": {
+    "eslint": "^4.6.1"
+  },
+  "dependencies": {
+    "eslint-restricted-globals": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1"
+  }
+}
