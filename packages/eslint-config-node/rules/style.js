@@ -46,7 +46,7 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
     'func-name-matching': 'error',
     'func-names': ['warn', 'as-needed'],
-    'func-style': ['warn', 'expression'],
+    'func-style': ['off', 'expression'],
     'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': 'off',
     'id-length': 'off',
