@@ -2,7 +2,7 @@
 
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
   rules: {
     'callback-return': 'off',
@@ -16,5 +16,5 @@ module.exports = {
     'no-process-exit': 'off',
     'no-restricted-modules': 'off',
     'no-sync': 'off',
-  }
-}
+  },
+};
