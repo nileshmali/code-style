@@ -2,9 +2,9 @@
 /* eslint no-magic-numbers: 'off' */
 module.exports = {
   rules: {
-    'array-bracket-newline': ['error', { multiline: true, minItems: 3 }],
+    'array-bracket-newline': ['off', { multiline: true, minItems: 3 }],
     'array-bracket-spacing': ['error', 'never'],
-    'array-element-newline': ['error', { multiline: true, minItems: 3 }],
+    'array-element-newline': ['off', { multiline: true, minItems: 3 }],
     'block-spacing': ['error', 'always'],
     'brace-style': [
       'error',
@@ -225,7 +225,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': ['warn', 'beside'],
     'object-curly-newline': [
-      'error',
+      'off',
       {
         ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
         ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
@@ -233,7 +233,7 @@ module.exports = {
     ],
     'object-curly-spacing': ['error', 'always'],
     'object-property-newline': [
-      'error',
+      'off',
       {
         allowMultiplePropertiesPerLine: true,
       },
