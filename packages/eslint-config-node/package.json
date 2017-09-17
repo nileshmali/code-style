@@ -1,6 +1,6 @@
 {
   "name": "@nmjs/eslint-config-node",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An eslint rules for node.js",
   "main": "index.js",
   "scripts": {
