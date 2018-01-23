@@ -1,0 +1,37 @@
+{
+  "name": "@nmjs/tslint-config-node",
+  "version": "1.0.0",
+  "description": "A set of tslint rules and configuration for NodeJS typescript project.",
+  "main": "lib/index.js",
+  "scripts": {
+    "precompile": "tslint --fix -p tsconfig.json",
+    "compile": "tsc",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nileshmali/code-style.git"
+  },
+  "keywords": [
+    "tslint",
+    "typescript",
+    "config",
+    "rules"
+  ],
+  "author": "Nilesh Mali <nileshmali86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nileshmali/code-style/issues"
+  },
+  "homepage": "https://github.com/nileshmali/code-style#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "tslint-consistent-codestyle": "^1.11.0",
+    "tslint-microsoft-contrib": "^5.0.2",
+    "vrsource-tslint-rules": "^5.8.0"
+  }
+}

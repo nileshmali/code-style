@@ -1,0 +1,29 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "src",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "allowSyntheticDefaultImports": false,
+    "pretty": true,
+    "sourceMap": false,
+    "alwaysStrict": true,
+    "noEmitHelpers": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "esnext"
+    ]
+  },
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}
