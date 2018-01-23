@@ -18,6 +18,9 @@
     "config",
     "rules"
   ],
+  "engines": {
+    "node": ">=8.6.0"
+  },
   "author": "Nilesh Mali <nileshmali86@gmail.com>",
   "license": "MIT",
   "bugs": {
