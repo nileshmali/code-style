@@ -4,7 +4,7 @@
   "description": "A set of tslint rules and configuration for NodeJS typescript project.",
   "main": "lib/index.js",
   "scripts": {
-    "precompile": "tslint --fix -p tsconfig.json",
+    "postcompile": "tslint --fix -p tsconfig.json",
     "compile": "tsc",
     "prepublishOnly": "npm run compile"
   },
