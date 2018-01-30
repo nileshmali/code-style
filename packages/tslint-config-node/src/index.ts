@@ -23,9 +23,10 @@ export = {
     'max-params': [true, 3],
     'multiline-arrow': [true, 'require-parens', 'require-block'],
     'no-banned-terms': true,
-    'no-unused-variable': [true, { 'ignore-pattern': '^_' }],
+    'no-unused-variable': false,
     'prefer-literal': [true, 'object', 'function', 'array'],
     'quotemark': [true, 'single', 'avoid-escape', 'avoid-template'],
+    'variable-name': false,
   },
   rulesDirectory: [
     'tslint-consistent-codestyle',
