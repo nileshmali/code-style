@@ -1,36 +1,16 @@
-import { dirname, join } from 'path';
-
 export = {
   extends: 'tslint:recommended',
   rules: {
-    'conditional-expression-parens': true,
-    'ext-variable-name': [
-      true,
-      ['class', 'pascal'],
-      ['interface', 'pascal', { regex: '^I.*$' }],
-      ['parameter', 'camel'],
-      ['property', 'static', 'camel', { regex: '^s.*$' }],
-      ['property', 'private', 'camel', 'require-leading-underscore'],
-      ['property', 'protected', 'camel', 'allow-leading-underscore'],
-      ['variable', 'local', 'camel'],
-      ['variable', 'const', 'upper'],
-      ['variable', 'camel', { regex: '^g.*$' }],
-      ['method', 'private', 'camel', 'require-leading-underscore'],
-      ['method', 'protected', 'camel', 'allow-leading-underscore'],
-      ['function', 'camel'],
-      ['default', 'camel'],
-    ],
-    'max-params': [true, 3],
-    'multiline-arrow': [true, 'require-parens', 'require-block'],
+    'arrow-parens': [true, 'ban-single-arg-parens'],
+    'conditional-expression-parens': false,
+    'curly': [true, 'ignore-same-line'],
     'no-banned-terms': true,
+    'no-bitwise': false,
     'no-unused-variable': false,
-    'prefer-literal': [true, 'object', 'function', 'array'],
+    'object-literal-sort-keys': false,
+    'prefer-for-of': false,
     'quotemark': [true, 'single', 'avoid-escape', 'avoid-template'],
     'variable-name': false,
   },
-  rulesDirectory: [
-    'tslint-consistent-codestyle',
-    'tslint-microsoft-contrib',
-    join(dirname(require.resolve('vrsource-tslint-rules')), './rules'),
-  ],
+  rulesDirectory: ['tslint-consistent-codestyle', 'tslint-microsoft-contrib'],
 };
