@@ -17,11 +17,7 @@ module.exports = {
     'default-case': ['error', { commentPattern: '^skip\\sdefault' }],
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
-    eqeqeq: [
-      'error',
-      'always',
-      { null: 'ignore' },
-    ],
+    eqeqeq: ['error', 'always', { null: 'ignore' }],
     'guard-for-in': 'error',
     'no-alert': 'warn',
     'no-caller': 'error',
@@ -31,11 +27,7 @@ module.exports = {
     'no-empty-function': [
       'error',
       {
-        allow: [
-          'arrowFunctions',
-          'functions',
-          'methods',
-        ],
+        allow: ['arrowFunctions', 'functions', 'methods'],
       },
     ],
     'no-empty-pattern': 'error',
@@ -157,7 +149,7 @@ module.exports = {
     'no-return-assign': ['error', 'always'],
     'no-return-await': 'error',
     'no-script-url': 'error',
-    'no-self-assign': 'error',
+    'no-self-assign': ['error', { props: true }],
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-throw-literal': 'error',
@@ -179,11 +171,7 @@ module.exports = {
     'no-warning-comments': [
       'off',
       {
-        terms: [
-          'todo',
-          'fixme',
-          'xxx',
-        ],
+        terms: ['todo', 'fixme', 'xxx'],
         location: 'start',
       },
     ],
@@ -192,11 +180,7 @@ module.exports = {
     radix: 'error',
     'require-await': 'warn',
     'vars-on-top': 'error',
-    'wrap-iife': [
-      'error',
-      'outside',
-      { functionPrototypeMethods: false },
-    ],
+    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
     yoda: 'error',
   },
 };

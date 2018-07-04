@@ -5,23 +5,16 @@ module.exports = {
     es6: true,
   },
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: 'strict',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
   },
   rules: {
-    'arrow-body-style': [
-      'error',
-      'as-needed',
-      { requireReturnForObjectLiteral: false },
-    ],
+    'arrow-body-style': ['error', 'as-needed', { requireReturnForObjectLiteral: false }],
     'arrow-parens': [
       'error',
       'as-needed',
       {
-        requireForBlockBody: true,
+        requireForBlockBody: false,
       },
     ],
     'arrow-spacing': ['error', { before: true, after: true }],
@@ -100,12 +93,7 @@ module.exports = {
       {
         ignoreCase: false,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: [
-          'none',
-          'all',
-          'multiple',
-          'single',
-        ],
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
       },
     ],
     'symbol-description': 'error',

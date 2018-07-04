@@ -6,11 +6,7 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     'array-element-newline': ['off', { multiline: true, minItems: 3 }],
     'block-spacing': ['error', 'always'],
-    'brace-style': [
-      'error',
-      '1tbs',
-      { allowSingleLine: true },
-    ],
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     camelcase: ['error', { properties: 'never' }],
     'capitalized-comments': [
       'off',
@@ -47,7 +43,7 @@ module.exports = {
     'func-name-matching': 'error',
     'func-names': ['warn', 'as-needed'],
     'func-style': ['off', 'expression'],
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': 'off',
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
@@ -126,11 +122,7 @@ module.exports = {
         newIsCap: true,
         newIsCapExceptions: [],
         capIsNew: false,
-        capIsNewExceptions: [
-          'Immutable.Map',
-          'Immutable.Set',
-          'Immutable.List',
-        ],
+        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
       },
     ],
     'new-parens': 'error',
@@ -144,33 +136,9 @@ module.exports = {
       'error',
       {
         groups: [
-          [
-            '+',
-            '-',
-            '*',
-            '/',
-            '%',
-            '**',
-          ],
-          [
-            '&',
-            '|',
-            '^',
-            '~',
-            '<<',
-            '>>',
-            '>>>',
-          ],
-          [
-            '==',
-            '!=',
-            '===',
-            '!==',
-            '>',
-            '>=',
-            '<',
-            '<=',
-          ],
+          ['+', '-', '*', '/', '%', '**'],
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
           ['&&', '||'],
           ['in', 'instanceof'],
         ],
@@ -188,19 +156,23 @@ module.exports = {
       'error',
       {
         selector: 'ForInStatement',
-        message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+        message:
+          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
       },
       {
         selector: 'ForOfStatement',
-        message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+        message:
+          'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
       },
       {
         selector: 'LabeledStatement',
-        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+        message:
+          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
       },
       {
         selector: 'WithStatement',
-        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+        message:
+          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
     'no-tabs': 'error',
@@ -244,25 +216,13 @@ module.exports = {
     'operator-linebreak': 'off',
     'padded-blocks': ['error', { blocks: 'never', classes: 'never', switches: 'never' }],
     'padding-line-between-statements': 'off',
-    'quote-props': [
-      'error',
-      'as-needed',
-      { keywords: false, unnecessary: true, numbers: false },
-    ],
-    quotes: [
-      'error',
-      'single',
-      { avoidEscape: true, allowTemplateLiterals: true },
-    ],
+    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'require-jsdoc': 'off',
     semi: ['error', 'always'],
     'semi-spacing': ['error', { before: false, after: true }],
     'semi-style': ['error', 'last'],
-    'sort-keys': [
-      'off',
-      'asc',
-      { caseSensitive: false, natural: true },
-    ],
+    'sort-keys': ['off', 'asc', { caseSensitive: false, natural: true }],
     'sort-vars': 'off',
     'space-before-blocks': 'error',
     'space-before-function-paren': [
@@ -280,8 +240,7 @@ module.exports = {
       {
         words: true,
         nonwords: false,
-        overrides: {
-        },
+        overrides: {},
       },
     ],
     'spaced-comment': [
