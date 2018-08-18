@@ -4,7 +4,6 @@ export = {
     'arrow-parens': [true, 'ban-single-arg-parens'],
     'conditional-expression-parens': false,
     curly: [true, 'ignore-same-line'],
-    'no-banned-terms': true,
     'no-bitwise': false,
     'no-unused-variable': false,
     'object-literal-sort-keys': false,
