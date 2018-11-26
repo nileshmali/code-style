@@ -1,5 +1,5 @@
 export = {
-  extends: 'tslint:recommended',
+  extends: ['tslint:latest', 'tslint-config-prettier'],
   rules: {
     'arrow-parens': [true, 'ban-single-arg-parens'],
     'conditional-expression-parens': false,
