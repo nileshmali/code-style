@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/nileshmali/code-style#readme",
   "peerDependencies": {
-    "eslint": "^5.0.1"
+    "eslint": "^5.16.0"
   },
   "dependencies": {
     "eslint-restricted-globals": "^0.2.0"
   },
   "devDependencies": {
-    "eslint": "5.0.1"
+    "eslint": "^5.16.0"
   }
 }
