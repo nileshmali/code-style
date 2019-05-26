@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/nileshmali/code-style#readme",
   "devDependencies": {
-    "@types/node": "^10.12.10",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "@types/node": "10.12.10",
+    "tslint": "5.11.0",
+    "typescript": "3.1.6"
   },
   "dependencies": {
     "tslint-config-prettier": "^1.16.0",
