@@ -19,7 +19,7 @@
     "rules"
   ],
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=12"
   },
   "author": "Nilesh Mali <nileshmali86@gmail.com>",
   "license": "MIT",
@@ -28,13 +28,13 @@
   },
   "homepage": "https://github.com/nileshmali/code-style#readme",
   "devDependencies": {
-    "@types/node": "^12.0.2",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.5"
+    "@types/node": "^14.0.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.2"
   },
   "dependencies": {
     "tslint-config-prettier": "^1.18.0",
-    "tslint-consistent-codestyle": "^1.15.1"
+    "tslint-consistent-codestyle": "^1.16.0"
   },
   "prettier": {
     "singleQuote": true,
